@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./JS/file.js" defeer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.7.10/vue.min.js"
+        integrity="sha512-H8u5mlZT1FD7MRlnUsODppkKyk+VEiCmncej8yZW1k/wUT90OQon0F9DSf/2Qh+7L/5UHd+xTLrMszjHEZc2BA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+    <title>Vue</title>
+</head>
+
+<body>
+    <header>
+        <section class="container-fluid text-center">
+            <div>
+                <h1 class="title ">VUE</h1>
+            </div>
+        </section>
+    </header>
+    <main>
+        <section class="container-lg text-center">
+            <div id="main-part">
+                <div>Accedi al portale</div>
+                <input type="text" v-model="nomeUser" placeholder="Username">
+                <input type="text" v-model="passWord">
+                <div>Benvenuto {{nomeUser}}</div>
+                <div>Scegli il tuo team preferito:
+                    <select v-model="team">
+                        <option value="./img/Warriors.webp">Golden State Warriors</option>
+                        <option value="./img/Heat.png">Miami Heat</option>
+                        <option value="./img/Lakers.png">Los Angeles Lakers</option>
+                        <option value="./img/Celtics.png">Boston Celtics</option>
+                        <option value="./img/Raptors.png">Toronto Raptors</option>
+                        <option value="./img/Spurs.png">San Antonio Spurs</option>
+                    </select>
+
+                    <img :src="team" alt="Squadra preferita">
+
+                </div>
+
+
+            </div>
+        </section>
+    </main>
+    <footer></footer>
+</body>
+
+</html>
