@@ -1,14 +1,14 @@
 
 
 
-let app = new Vue({
+const root = new Vue({
 
     el: '#main-part',
     data: {
         nomeUser: '',
         passWord: '',
         team: '',
-        text: `Accedi al portale`,
+        text: 'Accedi al portale',
     }
 
 

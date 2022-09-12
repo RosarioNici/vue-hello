@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="./JS/file.js" defeer></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.7.10/vue.min.js"
         integrity="sha512-H8u5mlZT1FD7MRlnUsODppkKyk+VEiCmncej8yZW1k/wUT90OQon0F9DSf/2Qh+7L/5UHd+xTLrMszjHEZc2BA=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -14,6 +14,7 @@
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 
     <title>Vue</title>
+
 </head>
 
 <body>
@@ -30,7 +31,7 @@
                 <div>Accedi al portale</div>
                 <input type="text" v-model="nomeUser" placeholder="Username">
                 <input type="text" v-model="passWord">
-                <div>Benvenuto {{nomeUser}}</div>
+                <div>Benvenuto {{ nomeUser }}</div>
                 <div>Scegli il tuo team preferito:
                     <select v-model="team">
                         <option value="./img/Warriors.webp">Golden State Warriors</option>
@@ -50,6 +51,7 @@
         </section>
     </main>
     <footer></footer>
+    <script src="./JS/file.js" defeer></script>
 </body>
 
 </html>
