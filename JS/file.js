@@ -9,7 +9,16 @@ const root = new Vue({
         passWord: '',
         team: '',
         text: 'Accedi al portale',
+        message: 'Benvenuto',
+
     }
 
 
+})
+
+const app = new Vue({
+    el: '#title-doc',
+    data: {
+        title: 'Vue NBA'
+    }
 })

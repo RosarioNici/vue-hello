@@ -20,18 +20,17 @@
 <body>
     <header>
         <section class="container-fluid text-center">
-            <div>
-                <h1 class="title ">VUE</h1>
+            <div id="title-doc">
+                <h1 class="title">{{title}}</h1>
             </div>
         </section>
     </header>
     <main>
         <section class="container-lg text-center">
             <div id="main-part">
-                <div>Accedi al portale</div>
+                <div>{{text}}</div>
                 <input type="text" v-model="nomeUser" placeholder="Username">
-                <input type="text" v-model="passWord">
-                <div>Benvenuto {{ nomeUser }}</div>
+                <div>{{message}} {{nomeUser}}</div>
                 <div>Scegli il tuo team preferito:
                     <select v-model="team">
                         <option value="./img/Warriors.webp">Golden State Warriors</option>
